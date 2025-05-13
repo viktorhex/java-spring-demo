@@ -24,6 +24,7 @@ dependencies {
     runtimeOnly 'com.h2database:h2:2.3.230' // Latest H2 version
 	implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
 	implementation 'org.hibernate:hibernate-core:6.4.4.Final'
+	implementation 'com.fasterxml.jackson.core:jackson-databind'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
@@ -31,4 +32,3 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
-

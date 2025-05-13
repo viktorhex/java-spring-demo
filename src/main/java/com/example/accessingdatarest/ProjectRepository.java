@@ -7,9 +7,9 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@RepositoryRestResource(collectionResourceRel = "people", path = "people")
-public interface PersonRepository extends PagingAndSortingRepository<Person, Long>, CrudRepository<Person,Long> {
+@RepositoryRestResource(collectionResourceRel = "projects", path = "projects")
+public interface ProjectRepository extends PagingAndSortingRepository<Project, Long>, CrudRepository<Project,Long> {
 
-  List<Person> findByLastName(@Param("name") String name);
+  List<Project> findByName(@Param("name") String name);
 
 }
